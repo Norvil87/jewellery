@@ -1,0 +1,225 @@
+.blog h2 {
+  font-family: "Cormorant Garamond", "Arial", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+  color: #1d1613;
+  text-align: center;
+
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.blog__articles-container {
+  display: flex;
+}
+
+.blog__article {
+  width: 100%;
+  min-height: 300px;
+
+  margin-bottom: 30px;
+
+  background-repeat: no-repeat;
+}
+
+.blog__article--highlighted {
+  min-height: 630px;
+
+  position: relative;
+}
+
+.blog__article-info {
+  width: 50%;
+  min-height: 300px;
+
+  margin-left: auto;
+  padding-top: 68px;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: #f0eae4;
+}
+
+.blog__article--highlighted .blog__article-info {
+  min-height: 315px;
+  padding-top: 90px;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.blog__article-info p {
+  color: #9B9997;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+
+  margin-bottom: 12px;
+}
+
+.blog__article-info h3 {
+  font-family: "Cormorant Garamond", "Arial", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 34px;
+  text-align: center;
+
+  margin: 0;
+  margin-bottom: 37px;
+  padding: 0 35px;
+}
+
+.blog__article--power-of-crystal h3 {
+  padding: 0 60px;
+}
+
+.blog__article:nth-child(2n) .blog__article-info {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.blog__article:nth-child(2n) {
+  background-position: right center;
+}
+
+.blog__article--care-for-jewellery {
+  background-image: url('../img/blog-jess-harper-sunday@1x.jpg');
+}
+
+.blog__article--power-of-crystal {
+  background-image: url('../img/blog-alex-holyoake@1x.jpg');
+}
+
+.blog__article--19-trends {
+  background-image: url('../img/blog-alve-odonnell@1x.jpg');
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .blog__article--care-for-jewellery {
+    background-image: url('../img/blog-jess-harper-sunday@2x.jpg');
+    background-size: 285px 300px;
+  }
+
+  .blog__article--power-of-crystal {
+    background-image: url('../img/blog-alex-holyoake@2x.jpg');
+    background-size: 285px 300px;
+  }
+
+  .blog__article--19-trends {
+    background-image: url('../img/blog-alve-odonnell@2x.jpg');
+    background-size: 570px 630px;
+  }
+}
+
+.blog__article-link {
+  display: block;
+  border-bottom: 1px solid #a87b62;
+
+  color: #1d1613;
+  text-align: center;
+
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+
+  width: 100px;
+}
+
+.blog__link {
+  display: block;
+  border-bottom: 1px solid #a87b62;
+
+  color: #1d1613;
+  text-align: center;
+
+  width: 67px;
+
+  margin: 0 auto;
+  margin-bottom: 60px;
+  padding-bottom: 3px;
+}
+
+.blog__left-column {
+  width: 48.5%;
+
+  margin-right: auto;
+}
+
+.blog__right-column {
+  width: 48.5%;
+}
+
+@media (max-width: $desktop-res) {
+  .blog__article {
+    background-size: 50% 100%;
+
+    margin-bottom: 50px;
+  }
+
+  .blog__article--highlighted {
+    min-height: 300px;
+  }
+
+  .blog__article--highlighted .blog__article-info {
+    min-height: 300px;
+
+    margin-left: auto;
+    padding-top: 88px;
+  }
+
+  .blog__article-info h3 {
+    padding: 0 85px;
+  }
+
+  .blog__articles-container {
+    display: block;
+  }
+
+  .blog__left-column,
+  .blog__right-column {
+    width: 100%;
+  }
+}
+
+@media (max-width: $tablet-res) {
+  .blog__article,
+  .blog__article--highlighted {
+    min-height: 512px;
+    padding-top: 1px;
+    margin-bottom: 40px;
+
+    background-size: 100% 50%;
+    background-position: center top;
+
+    &:nth-child(2n) {
+      background-position: center top;
+    }
+  }
+
+  .blog__article-info,
+  .blog__article--highlighted .blog__article-info {
+    width: 100%;
+    min-height: 256px;
+
+    margin-top: 254px;
+    padding-top: 45px;
+  }
+
+  .blog__article--highlighted .blog__article-info {
+    padding-top: 65px;
+  }
+
+  .blog__article-info h3 {
+    padding: 0 60px;
+  }
+
+  .blog__link {
+    margin-bottom: 50px;
+  }
+}
