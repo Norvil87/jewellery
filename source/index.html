@@ -424,33 +424,59 @@
     </footer>
 
 
-  <!-- <div class="modal">
-    <div class="modal__content">
-      <h2>Закажите звонок</h2>
-      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-      <form class="modal__inputs-container" action="#" method="post" enctype="multipart/form-data" autocomplete="on">
-        <div class="modal__input-container modal__input-container--name">
-          <input id="modal-name" type="text" name="name" placeholder="Имя" required>
-          <label class="visually-hidden" for="modal-name"></label>
-        </div>
-        <div class="modal__input-container modal__input-container--tel">
-          <input id="modal-tel" type="tel" name="tel" minlength="14" maxlength="14" required
-                  placeholder="Телефон">
-          <label class="visually-hidden" for="modal-tel"></label>
-        </div>
-        <div class="modal__textarea-container">
-          <textarea id="modal-text" placeholder="Ваш вопрос"></textarea>
-          <label class="visually-hidden" for="modal-text"></label>
-        </div>
-        <button class="button modal__button modal__button--submit" type="submit">отправить</button>
-        <button class="button modal__button modal__button--close" type="button">закрыть</button>
-        <div class="modal__input-container">
-          <input id="modal-checkbox" class="visually-hidden" type="checkbox" name="checkbox">
-          <label for="modal-checkbox">Я согласен на обработку персональных данных</label>
-        </div>
-      </form>
+  <div class="login">
+    <div class="login__content">
+      <div class="login__content-container">
+        <h2>Log In</h2>
+        <form class="login__form" action="#" method="post" enctype="multipart/form-data" autocomplete="on">
+          <div class="login__input-container login__input-container--email">
+            <input id="login-email" type="email" name="email" placeholder="Your E-mail" required>
+            <label class="visually-hidden" for="login-email">Enter email</label>
+          </div>
+          <div class="login__input-container login__input-container--password">
+            <input id="login-password" type="password" name="password" required placeholder="Password">
+            <label class="visually-hidden" for="login-tel">Enter password</label>
+          </div>
+          <a class="login__password-reset">Forgot your password?</a>
+          <button class="button login__button login__button--submit" type="submit">Log In</button>
+          <button class="login__button login__button--close" type="button">close modal</button>
+        </form>
+        <p class="login__sign-up">Don’t have an account? <a class="login__sign-up-link" href="#">Sign up</a></p>
+      </div>
     </div>
-  </div> -->
+  </div>
+
+  <div class="addItem">
+    <div class="addItem__content">
+      <h2>The item was added to your cart</h2>
+      <div class="addItem__container">
+        <div class="addItem__image-container">
+          <picture>
+            <source type="image/webp" srcset="img/products/gold necklace/necklace-detail@1x.webp 1x, img/products/gold necklace/necklace-detail@2x.webp 2x">
+            <img src="img/products/gold necklace/necklace-detail@1x.jpg" srcset="img/products/gold necklace/necklace-detail@1x.jpg 1x, img/products/gold necklace/necklace-detail@2x.jpg 2x" alt="Elephant earrings">
+          </picture>
+        </div>
+        <div class="addItem__info">
+          <h3>Gold Necklace</h3>
+          <p>$ 115</p>
+        </div>
+        <div class="addItem__quantity">
+          <button class="addItem__quantity-button addItem__quantity-button--add" type="button">add one item</button>
+          <p>1</p>
+          <button class="addItem__quantity-button addItem__quantity-button--remove" type="button">remove one item</button>
+        </div>
+      </div>
+      <div class="addItem__total">
+        <p class="addItem__total-goods">You have <span>1</span> item in the cart</p>
+        <p class="addItem__total-cost">Cart subtotal: $ <span>115</span></p>
+      </div>
+      <div class="addItem__buttons-container">
+        <button class="button addItem__button addItem__button--continue" type="button">Continue shopping</button>
+        <button class="button addItem__button addItem__button--checkout" type="button">Checkout</button>
+      </div>
+      <button class="addItem__button-close" type="button">close modal</button>
+    </div>
+  </div>
 
   <!-- <script src="js/jquery.min.js"></script> -->
   <script src="js/vendor.js"></script>

@@ -1,0 +1,299 @@
+.addItem {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(29, 22, 19, 0.25);
+
+  display: none;
+}
+
+.addItem__button {
+  min-width: 200px;
+}
+
+.addItem__button:hover {
+  opacity: 1;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.addItem__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.addItem__button--continue {
+  background-color: transparent;
+
+  color: $fancyBrown;
+}
+
+.addItem__button--continue:hover {
+  opacity: 0.6;
+
+  color: $fancyBrown;
+}
+
+.addItem__button--continue:active {
+  opacity: 0.3;
+}
+
+.addItem__button-close {
+  font-size: 0;
+
+  width: 14px;
+  height: 14px;
+
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  border: none;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 5.44469L12.4447 0L14 1.55531L8.55531 7L14 12.4447L12.4447 14L7 8.55531L1.55531 14L0 12.4447L5.44469 7L0 1.55531L1.55531 0L7 5.44469Z' fill='%231D1613'/%3E%3C/svg%3E%0A");  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.login__button--close:hover{
+  opacity: 0.6;
+}
+
+.login__button--close:active{
+  opacity: 0.3;
+}
+
+.addItem__buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.addItem__content {
+  width: 500px;
+  height: 439px;
+
+  padding: 48px 35px;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #ffffff;
+
+  overflow: auto;
+}
+
+.addItem__content h2 {
+  font-family: "Cormorant Garamond", "Arial", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 34px;
+  color: #1d1613;
+  text-align: center;
+
+  margin: 0;
+  margin-bottom: 45px;
+  padding: 0;
+}
+
+.addItem__container {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 58px;
+}
+
+.addItem__info h3 {
+  font-family: "Cormorant Garamond", "Arial", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #1d1613;
+  text-align: center;
+
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.addItem__info p {
+  color: #1d1613;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.addItem__image-container {
+  width: 84px;
+  height: 79px;
+}
+
+.addItem__quantity {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 190px;
+}
+
+.addItem__quantity p {
+  font-size: 18px;
+  line-height: 23px;
+
+  text-align: center;
+
+  margin-bottom: 8px;
+}
+
+.addItem__quantity-button {
+  font-size: 0;
+
+  width: 14px;
+  height: 14px;
+
+  border: none;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.addItem__quantity-button--add {
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6.125H14V7.875H0V6.125Z' fill='%239B9997'/%3E%3Cpath d='M6.125 14V0H7.875V14H6.125Z' fill='%239B9997'/%3E%3C/svg%3E%0A");
+  margin-bottom: 12px;
+}
+
+.addItem__quantity-button--remove {
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='2' viewBox='0 0 14 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0H14V2H0V0Z' fill='%239B9997'/%3E%3C/svg%3E ");
+}
+
+.addItem__total {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 35px;
+}
+
+.addItem__total-goods {
+  color: #1d1613;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.addItem__total-cost {
+  color: #1d1613;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+@media (max-width: $desktop-res) {
+  .addItem__button {
+    min-width: 206px;
+  }
+
+  .addItem__button-close {
+    top: 22px;
+    right: 21px;
+  }
+
+  .addItem__content {
+    width: 502px;
+
+    padding: 48px 30px;
+  }
+
+  .addItem__image-container {
+    width: 88px;
+  }
+
+  .addItem__quantity-button--add {
+    margin-bottom: 15px;
+  }
+
+  .addItem__quantity p {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: $tablet-res) {
+  .addItem__button {
+    min-width: 100%;
+
+    margin-bottom: 19px;
+  }
+
+  .addItem__button-close {
+    top: 15px;
+    right: 15px;
+  }
+
+  .addItem__buttons-container {
+    display: block;
+  }
+
+  .addItem__content {
+    width: 290px;
+    height: 519px;
+
+    padding: 38px 15px;
+  }
+
+  .addItem__content h2 {
+    font-size: 24px;
+    line-height: 29px;
+
+    padding: 0 25px;
+    margin-bottom: 31px;
+  }
+
+  .addItem__container {
+    margin-bottom: 45px;
+  }
+
+  .addItem__info h3 {
+    font-size: 16px;
+
+    margin-bottom: 5px;
+  }
+
+  .addItem__info p {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .addItem__image-container {
+    width: 70px;
+    height: 63px;
+  }
+
+  .addItem__quantity {
+    margin-left: 50px;
+  }
+
+  .addItem__quantity-button--add {
+    margin-bottom: 13px;
+  }
+
+  .addItem__quantity p {
+    margin-bottom: 5px;
+  }
+
+  .addItem__total {
+    display: block;
+
+    margin-bottom: 32px;
+  }
+
+  .addItem__total p {
+    font-size: 12px;
+    line-height: 16px;
+
+    margin-bottom: 12px;
+  }
+}

@@ -1,0 +1,236 @@
+.login {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: none;
+}
+
+.login h2 {
+  font-family: "Cormorant Garamond", "Arial", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+  color: #1d1613;
+  text-align: center;
+
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.login__button {
+  width: 100%;
+
+  margin-bottom: 15px;
+}
+
+.login__button:hover {
+  opacity: 1;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.login__button--close {
+  font-size: 0;
+
+  width: 14px;
+  height: 14px;
+
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  border: none;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 5.44469L12.4447 0L14 1.55531L8.55531 7L14 12.4447L12.4447 14L7 8.55531L1.55531 14L0 12.4447L5.44469 7L0 1.55531L1.55531 0L7 5.44469Z' fill='%231D1613'/%3E%3C/svg%3E%0A");  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.login__button--close:hover{
+  opacity: 0.6;
+}
+
+.login__button--close:active{
+  opacity: 0.3;
+}
+
+.login__content {
+  width: 430px;
+  height: 586px;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  overflow: auto;
+
+  background-color: #f0eae4;
+  background-image: url('../img/background-sweet-ice-cream-photography@1x.jpg');
+  background-position: left top;
+  background-repeat: no-repeat;
+
+  box-shadow: 0px 5px 32px rgba(226, 221, 215, 0.24);
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .login__content {
+    background-image: url('../img/background-sweet-ice-cream-photography@2x.jpg');
+    background-size: 430px 138px;
+  }
+}
+
+.login__content-container {
+  padding-top: 190px;
+  padding-bottom: 20px;
+  padding-right: 45px;
+  padding-left: 45px;
+}
+
+.login__input-container {
+  border-bottom: 1px solid #1d1613;
+
+  padding-top: 9px;
+  padding-bottom: 9px;
+  margin-bottom: 25px;
+}
+
+.login__input-container--password {
+  margin-bottom: 5px;
+}
+
+.login__input-container input {
+  background-color: #f0eae4;
+  border: none;
+  border-radius: 0;
+
+  padding-right: 15px;
+
+  width: 100%;
+  height: 21px;
+
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.login__input-container input:hover {
+  opacity: 0.6;
+}
+
+.login__input-container input:focus {
+  outline: none;
+}
+
+.login__input-container input::placeholder {
+  font-family: "Poppins", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #9B9997;
+}
+
+.login__password-reset {
+  display: block;
+
+  font-size: 12px;
+  line-height: 18px;
+  color: #9b9997;
+  text-align: right;
+
+  margin-bottom: 44px;
+}
+
+.login__sign-up {
+  font-size: 14px;
+  line-height: 21px;
+  color: #9b9997;
+  white-space: pre;
+  text-align: center;
+
+  margin-bottom: 10px;
+}
+
+.login__sign-up-link {
+  color: #1d1613;
+}
+
+@media (max-width: $desktop-res) {
+  .login__button--close {
+    width: 20px;
+    height: 20px;
+
+    top: 22px;
+    right: 20px;
+
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 7.77813L17.7781 0L20 2.22187L12.2219 10L20 17.7781L17.7781 20L10 12.2219L2.22187 20L0 17.7781L7.77813 10L0 2.22187L2.22187 0L10 7.77813Z' fill='%231D1613'/%3E%3C/svg%3E%0A");
+  }
+
+  .login__content {
+    width: 442px;
+
+    background-size: 442px 138px;
+  }
+
+  .login__content-container {
+    padding-right: 51px;
+    padding-left: 51px;
+  }
+}
+
+@media (max-width: $tablet-res) {
+  .login h2 {
+    font-size: 24px;
+    line-height: 31px;
+
+    margin-bottom: 15px;
+  }
+
+  .login__button {
+    min-width: 240px;
+  }
+
+  .login__button--close {
+    width: 14px;
+    height: 14px;
+
+    position: absolute;
+    top: 15px;
+    right: -98px;
+
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 5.44469L12.4447 0L14 1.55531L8.55531 7L14 12.4447L12.4447 14L7 8.55531L1.55531 14L0 12.4447L5.44469 7L0 1.55531L1.55531 0L7 5.44469Z' fill='%231D1613'/%3E%3C/svg%3E%0A");  background-position: center;
+  }
+
+  .login__content {
+    width: 270px;
+    height: 470px;
+
+    background-size: 270px 84px;
+  }
+
+  .login__content-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 122px;
+  }
+
+  .login__input-container {
+    margin-bottom: 20px;
+  }
+
+  .login__input-container--password {
+    margin-bottom: 5px;
+  }
+
+  .login__password-reset {
+    margin-bottom: 35px;
+  }
+}

@@ -17,6 +17,10 @@
   background-repeat: no-repeat;
 }
 
+.header__input-container input:hover {
+  opacity: 0.6;
+}
+
 .header__input-container input:focus {
   outline: none;
 }
