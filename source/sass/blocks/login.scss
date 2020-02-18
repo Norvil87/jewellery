@@ -8,7 +8,9 @@
   width: 100%;
   height: 100%;
 
-  display: none;
+  background-color: #ffffff;
+
+  z-index: 200;
 }
 
 .login h2 {
@@ -49,15 +51,16 @@
 
   border: none;
   background-color: transparent;
-  background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 5.44469L12.4447 0L14 1.55531L8.55531 7L14 12.4447L12.4447 14L7 8.55531L1.55531 14L0 12.4447L5.44469 7L0 1.55531L1.55531 0L7 5.44469Z' fill='%231D1613'/%3E%3C/svg%3E%0A");  background-position: center;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 5.44469L12.4447 0L14 1.55531L8.55531 7L14 12.4447L12.4447 14L7 8.55531L1.55531 14L0 12.4447L5.44469 7L0 1.55531L1.55531 0L7 5.44469Z' fill='%231D1613'/%3E%3C/svg%3E%0A");
+  background-position: center;
   background-repeat: no-repeat;
 }
 
-.login__button--close:hover{
+.login__button--close:hover {
   opacity: 0.6;
 }
 
-.login__button--close:active{
+.login__button--close:active {
   opacity: 0.3;
 }
 
@@ -73,17 +76,25 @@
   overflow: auto;
 
   background-color: #f0eae4;
-  background-image: url('../img/background-sweet-ice-cream-photography@1x.jpg');
+  background-image: url("../img/background-sweet-ice-cream-photography@1x.jpg");
   background-position: left top;
   background-repeat: no-repeat;
 
   box-shadow: 0px 5px 32px rgba(226, 221, 215, 0.24);
 }
 
+.webp .login__content {
+  background-image: url("../img/background-sweet-ice-cream-photography@1x.webp");
+}
+
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .login__content {
-    background-image: url('../img/background-sweet-ice-cream-photography@2x.jpg');
+    background-image: url("../img/background-sweet-ice-cream-photography@2x.jpg");
     background-size: 430px 138px;
+  }
+
+  .webp .login__content {
+    background-image: url("../img/background-sweet-ice-cream-photography@2x.webp");
   }
 }
 
@@ -129,13 +140,13 @@
 }
 
 .login__input-container input::placeholder {
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
 
-  color: #9B9997;
+  color: #9b9997;
 }
 
 .login__password-reset {
@@ -161,6 +172,10 @@
 
 .login__sign-up-link {
   color: #1d1613;
+}
+
+.login__sign-up-link:focus {
+  outline: none;
 }
 
 @media (max-width: $desktop-res) {
@@ -199,14 +214,15 @@
   }
 
   .login__button--close {
-    width: 14px;
+    min-width: 14px;
     height: 14px;
 
     position: absolute;
-    top: 15px;
-    right: -98px;
+    top: 17px;
+    right: 10px;
 
-    background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 5.44469L12.4447 0L14 1.55531L8.55531 7L14 12.4447L12.4447 14L7 8.55531L1.55531 14L0 12.4447L5.44469 7L0 1.55531L1.55531 0L7 5.44469Z' fill='%231D1613'/%3E%3C/svg%3E%0A");  background-position: center;
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 5.44469L12.4447 0L14 1.55531L8.55531 7L14 12.4447L12.4447 14L7 8.55531L1.55531 14L0 12.4447L5.44469 7L0 1.55531L1.55531 0L7 5.44469Z' fill='%231D1613'/%3E%3C/svg%3E%0A");
+    background-position: center;
   }
 
   .login__content {

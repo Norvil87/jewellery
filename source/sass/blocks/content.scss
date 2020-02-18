@@ -3,7 +3,7 @@
 }
 
 .content__catalog-wrapper {
-  border-bottom: 1px solid #F6F5F4;
+  border-bottom: 1px solid #f6f5f4;
 }
 
 .content__catalog-wrapper .container {
@@ -38,10 +38,8 @@
 
   display: flex;
   align-items: center;
-}
 
-.content__top-container--catalog {
-  margin-bottom: 80px;
+  background-color: $fancyBrown;
 }
 
 .content__top-container div {
@@ -89,20 +87,32 @@
 .content__top-container--index {
   height: 463px;
 
-  background-image: url('../img/background-index-top-desktop@1x.jpg');
+  background-image: url("../img/background-index-top-desktop@1x.jpg");
+}
+
+.webp .content__top-container--index {
+  background-image: url("../img/background-index-top-desktop@1x.webp");
 }
 
 .content__top-container--catalog {
   height: 261px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 
-  background-image: url('../img/background-catalog-top-desktop@1x.jpg');
+  background-image: url("../img/background-catalog-top-desktop@1x.jpg");
+}
+
+.webp .content__top-container--catalog {
+  background-image: url("../img/background-catalog-top-desktop@1x.webp");
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .content__top-container--index {
-    background-image: url('../img/background-index-top-desktop@2x.jpg');
+    background-image: url("../img/background-index-top-desktop@2x.jpg");
     background-size: 1366px 463px;
+  }
+
+  .webp .content__top-container--index {
+    background-image: url("../img/background-index-top-desktop@2x.webp");
   }
 }
 
@@ -192,13 +202,21 @@
   }
 
   .content__top-container--index {
-    background-image: url('../img/background-index-top-mobile@1x.jpg');
+    background-image: url("../img/background-index-top-mobile@1x.jpg");
+    background-size: cover;
+  }
+
+  .webp .content__top-container--index {
+    background-image: url("../img/background-index-top-mobile@1x.webp");
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .content__top-container--index {
-      background-image: url('../img/background-index-top-mobile@2x.jpg');
-      background-size: 320px 463px;
+      background-image: url("../img/background-index-top-mobile@2x.jpg");
+    }
+
+    .webp .content__top-container--index {
+      background-image: url("../img/background-index-top-mobile@2x.webp");
     }
   }
 

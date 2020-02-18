@@ -54,7 +54,7 @@
 }
 
 .blog__article-info p {
-  color: #9B9997;
+  color: #9b9997;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
@@ -89,31 +89,55 @@
 }
 
 .blog__article--care-for-jewellery {
-  background-image: url('../img/blog-jess-harper-sunday@1x.jpg');
+  background-image: url("../img/blog-jess-harper-sunday@1x.jpg");
+}
+
+.webp .blog__article--care-for-jewellery {
+  background-image: url("../img/blog-jess-harper-sunday@1x.webp");
 }
 
 .blog__article--power-of-crystal {
-  background-image: url('../img/blog-alex-holyoake@1x.jpg');
+  background-image: url("../img/blog-alex-holyoake@1x.jpg");
+}
+
+.webp .blog__article--power-of-crystal {
+  background-image: url("../img/blog-alex-holyoake@1x.webp");
 }
 
 .blog__article--19-trends {
-  background-image: url('../img/blog-alve-odonnell@1x.jpg');
+  background-image: url("../img/blog-alve-odonnell@1x.jpg");
+}
+
+.webp .blog__article--19-trends {
+  background-image: url("../img/blog-alve-odonnell@1x.webp");
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .blog__article--care-for-jewellery {
-    background-image: url('../img/blog-jess-harper-sunday@2x.jpg');
+    background-image: url("../img/blog-jess-harper-sunday@2x.jpg");
     background-size: 285px 300px;
+  }
+
+  .webp .blog__article--care-for-jewellery {
+    background-image: url("../img/blog-jess-harper-sunday@2x.webp");
   }
 
   .blog__article--power-of-crystal {
-    background-image: url('../img/blog-alex-holyoake@2x.jpg');
+    background-image: url("../img/blog-alex-holyoake@2x.jpg");
     background-size: 285px 300px;
   }
 
+  .webp .blog__article--power-of-crystal {
+    background-image: url("../img/blog-alex-holyoake@2x.webp");
+  }
+
   .blog__article--19-trends {
-    background-image: url('../img/blog-alve-odonnell@2x.jpg');
+    background-image: url("../img/blog-alve-odonnell@2x.jpg");
     background-size: 570px 630px;
+  }
+
+  .webp .blog__article--19-trends {
+    background-image: url("../img/blog-alve-odonnell@2x.webp");
   }
 }
 

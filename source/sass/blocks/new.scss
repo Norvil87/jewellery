@@ -51,7 +51,7 @@
 }
 
 .new__gallery-list {
-  @include  listReset;
+  @include listReset;
 
   display: flex;
   width: 300%;
@@ -91,7 +91,7 @@
 }
 
 .new__pagination-list .current-page {
-  color: #1d1613
+  color: #1d1613;
 }
 
 .new__top-container {

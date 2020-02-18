@@ -1,5 +1,7 @@
 .item__big-image-container {
   position: relative;
+
+  width: 78.7%;
 }
 
 .item__button {
@@ -126,6 +128,8 @@
 @media (max-width: $desktop-res) {
   .item__big-image-container {
     margin-bottom: 14px;
+
+    width: 100%;
   }
 
   .item__big-image-container img {

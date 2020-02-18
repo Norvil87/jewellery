@@ -45,7 +45,7 @@
 }
 
 .footer__form input::placeholder {
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -54,7 +54,7 @@
 }
 
 .footer__form-button {
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -170,6 +170,8 @@
     padding-top: 50px;
     padding-bottom: 37px;
     margin-bottom: 0;
+
+    min-height: 447px;
   }
 
   .footer__container {
@@ -205,6 +207,8 @@
 @media (max-width: $tablet-res) {
   .footer {
     padding-bottom: 50px;
+
+    min-height: 772px;
   }
 
   .footer__nav-list--left,
@@ -249,6 +253,14 @@
     }
   }
 
+  .footer__social-item--facebook {
+    margin-right: 20px;
+  }
+
+  .footer__social-item--instagramm {
+    margin-right: 35px;
+  }
+
   .footer__social-link {
     font-size: 0;
 
@@ -263,6 +275,7 @@
 
   .footer__social-link--facebook {
     width: 12px;
+    height: 22px;
   }
 
   .footer__social-link--twitter {
@@ -270,8 +283,10 @@
   }
 
   .footer__social-list {
-    width: 100%;
+    width: 200px;
+
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 
     padding-top: 12px;

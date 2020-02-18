@@ -66,80 +66,136 @@
 .media__image-8-container {
   min-height: 230px;
 
-  background-image: url('../img/followus/8@1x.jpg');
+  background-image: url("../img/followus/8@1x.jpg");
+}
+
+.webp .media__image-8-container {
+  background-image: url("../img/followus/8@1x.webp");
 }
 
 .media__image-1-container {
   min-height: 154px;
 
-  background-image: url('../img/followus/1@1x.jpg');
+  background-image: url("../img/followus/1@1x.jpg");
+}
+
+.webp .media__image-1-container {
+  background-image: url("../img/followus/1@1x.webp");
 }
 
 .media__image-2-container {
   min-height: 414px;
 
-  background-image: url('../img/followus/2@1x.jpg');
+  background-image: url("../img/followus/2@1x.jpg");
+}
+
+.webp .media__image-2-container {
+  background-image: url("../img/followus/2@1x.webp");
 }
 
 .media__image-4-container {
   min-height: 193px;
 
-  background-image: url('../img/followus/4@1x.jpg');
+  background-image: url("../img/followus/4@1x.jpg");
+}
+
+.webp .media__image-4-container {
+  background-image: url("../img/followus/4@1x.webp");
 }
 
 .media__image-5-container {
   min-height: 191px;
 
-  background-image: url('../img/followus/5@1x.jpg');
+  background-image: url("../img/followus/5@1x.jpg");
+}
+
+.webp .media__image-5-container {
+  background-image: url("../img/followus/5@1x.webp");
 }
 
 .media__image-6-container {
   min-height: 218px;
 
-  background-image: url('../img/followus/6@1x.jpg');
+  background-image: url("../img/followus/6@1x.jpg");
   background-position: right center;
+}
+
+.webp .media__image-6-container {
+  background-image: url("../img/followus/6@1x.webp");
 }
 
 .media__image-7-container {
   min-height: 166px;
 
-  background-image: url('../img/followus/7@1x.jpg');
+  background-image: url("../img/followus/7@1x.jpg");
+}
+
+.webp .media__image-7-container {
+  background-image: url("../img/followus/7@1x.webp");
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .media__image-8-container {
-    background-image: url('../img/followus/8@2x.jpg');
+    background-image: url("../img/followus/8@2x.jpg");
     background-size: 230px 230px;
   }
 
+  .webp .media__image-8-container {
+    background-image: url("../img/followus/8@2x.webp");
+  }
+
   .media__image-1-container {
-    background-image: url('../img/followus/1@2x.jpg');
+    background-image: url("../img/followus/1@2x.jpg");
     background-size: 230px 154px;
   }
 
+  .webp .media__image-1-container {
+    background-image: url("../img/followus/1@2x.webp");
+  }
+
   .media__image-2-container {
-    background-image: url('../img/followus/2@2x.jpg');
+    background-image: url("../img/followus/2@2x.jpg");
     background-size: 400px 414px;
   }
 
+  .webp .media__image-2-container {
+    background-image: url("../img/followus/2@2x.webp");
+  }
+
   .media__image-4-container {
-    background-image: url('../img/followus/4@2x.jpg');
+    background-image: url("../img/followus/4@2x.jpg");
     background-size: 232px 193px;
   }
 
+  .webp .media__image-4-container {
+    background-image: url("../img/followus/4@2x.webp");
+  }
+
   .media__image-5-container {
-    background-image: url('../img/followus/5@1x.jpg');
+    background-image: url("../img/followus/5@1x.jpg");
     background-size: 218px 191px;
   }
 
+  .webp .media__image-5-container {
+    background-image: url("../img/followus/5@1x.webp");
+  }
+
   .media__image-6-container {
-    background-image: url('../img/followus/6@1x.jpg');
+    background-image: url("../img/followus/6@1x.jpg");
     background-size: 218px 218px;
   }
 
+  .webp .media__image-6-container {
+    background-image: url("../img/followus/6@1x.webp");
+  }
+
   .media__image-7-container {
-    background-image: url('../img/followus/7@1x.jpg');
+    background-image: url("../img/followus/7@1x.jpg");
     background-size: 232px 166px;
+  }
+
+  .webp .media__image-7-container {
+    background-image: url("../img/followus/7@1x.webp");
   }
 }
 
