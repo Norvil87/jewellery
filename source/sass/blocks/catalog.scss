@@ -14,11 +14,13 @@
   }
 }
 
-.catalog__item img {
-  height: 273px;
-  width: 270px;
+.catalog__item .product__image-container {
+  width: 100%;
 
-  display: block;
+  height: 273px;
+}
+
+.catalog__item img {
   margin: 0 auto;
 }
 
@@ -78,7 +80,7 @@
     width: 100%;
   }
 
-  .catalog__item img {
+  .catalog__item .product__image-container {
     height: 209px;
   }
 }
@@ -97,8 +99,11 @@
     }
   }
 
-  .catalog__item img {
+  .catalog__item .product__image-container {
     height: 135px;
+  }
+
+  .catalog__item img {
     width: 130px;
   }
 

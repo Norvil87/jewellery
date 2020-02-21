@@ -6,10 +6,12 @@ var KeyCodes = {
 };
 
 var Resolutions = {
-  DESKTOP: 1024
+  DESKTOP: 1024,
+  MOBILE: 767
 };
 
 var GALLERY_STEP = 100;
+var SWIPE_LENGTH = 50;
 
 var body = document.querySelector('body');
 
@@ -50,9 +52,15 @@ var galleryPosition = 0;
 
 var popupFocus;
 var escPressHandler;
+var startCoord;
+var endCoord;
 
 function isDesktopResolution() {
   return body.clientWidth >= Resolutions.DESKTOP;
+}
+
+function isMobileResolution() {
+  return body.clientWidth <= Resolutions.MOBILE;
 }
 
 function getBodyScrollTop() {
@@ -226,14 +234,26 @@ if (addItemModal) {
   addItemModal.addEventListener('click', onAddItemModalClick);
 }
 
+function shiftCarousel(direction) {
+  switch (direction) {
+    case 'right':
+      galleryPosition += GALLERY_STEP;
+      break;
+    case 'left':
+      galleryPosition -= GALLERY_STEP;
+      break;
+  }
+
+  carouselList.style.marginLeft = galleryPosition + '%';
+}
+
 if (carouselBackwardsButton) {
   carouselBackwardsButton.addEventListener('click', function () {
     if (galleryPosition <= maxGalleryShift) {
       return;
     }
-    galleryPosition -= GALLERY_STEP;
 
-    carouselList.style.marginLeft = galleryPosition + '%';
+    shiftCarousel('left');
   });
 }
 
@@ -242,9 +262,8 @@ if (carouselForwardButton) {
     if (galleryPosition >= 0) {
       return;
     }
-    galleryPosition += GALLERY_STEP;
 
-    carouselList.style.marginLeft = galleryPosition + '%';
+    shiftCarousel('right');
   });
 }
 
@@ -256,7 +275,7 @@ window.addEventListener('resize', function () {
     carouselList.style.marginLeft = 0;
   }
 
-  if (isDesktopResolution() && !mobileMenu.classList.contains('hidden')) {
+  if (isDesktopResolution() && mobileMenu && !mobileMenu.classList.contains('hidden')) {
     toggleVisibility(mobileMenu);
   }
 
@@ -272,7 +291,7 @@ window.addEventListener('resize', function () {
 });
 
 function initialize() {
-  if (mobileMenu.classList.contains('no-js')) {
+  if (mobileMenu && mobileMenu.classList.contains('no-js')) {
     mobileMenu.classList.remove('no-js');
   }
 
@@ -283,6 +302,58 @@ function initialize() {
   if (!isDesktopResolution() && !filterForm.classList.contains('hidden')) {
     filterForm.classList.add('hidden');
   }
+}
+
+function checkGallerySwipe() {
+  if ((startCoord - endCoord) > SWIPE_LENGTH && galleryPosition > maxGalleryShift) {
+    shiftCarousel('left');
+  }
+
+  if ((endCoord - startCoord) > SWIPE_LENGTH && galleryPosition < 0) {
+    shiftCarousel('right');
+  }
+}
+
+function onCarouselMouseDown(evt) {
+  if (!isMobileResolution()) {
+    return;
+  }
+
+  startCoord = evt.clientX;
+
+  function onCarouselMouseUp(e) {
+    endCoord = e.clientX;
+    checkGallerySwipe();
+
+    carouselList.removeEventListener('mouseup', onCarouselMouseUp);
+  }
+
+  carouselList.addEventListener('mouseup', onCarouselMouseUp);
+}
+
+if (carouselList) {
+  carouselList.addEventListener('mousedown', onCarouselMouseDown);
+}
+
+function onCarouselTouchStart(evt) {
+  if (!isMobileResolution()) {
+    return;
+  }
+
+  startCoord = evt.targetTouches[0].screenX;
+
+  function onCarouselTouchEnd(e) {
+    endCoord = e.changedTouches[0].screenX;
+    checkGallerySwipe();
+
+    carouselList.removeEventListener('touchend', onCarouselTouchEnd);
+  }
+
+  carouselList.addEventListener('touchend', onCarouselTouchEnd);
+}
+
+if (carouselList) {
+  carouselList.addEventListener('touchstart', onCarouselTouchStart);
 }
 
 initialize();

@@ -69,7 +69,7 @@ gulp.task("webp", function () {
 });
 
 gulp.task("js", function () {
-  return gulp.src("source/js/*.js")
+  return gulp.src("source/js/main.js")
     .pipe(gulp.dest("build/js"));
 });
 
@@ -98,7 +98,7 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
+    "source/js/main.js",
     "source//*.ico"
     ], {
       base: "source"

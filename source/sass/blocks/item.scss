@@ -2,6 +2,7 @@
   position: relative;
 
   width: 78.7%;
+  height: 435px;
 }
 
 .item__button {
@@ -107,6 +108,8 @@
   display: block;
 
   margin-bottom: 30px;
+
+  height: 125px;
 }
 
 .item__user-menu {
@@ -128,6 +131,8 @@
 @media (max-width: $desktop-res) {
   .item__big-image-container {
     margin-bottom: 14px;
+
+    height: 286px;
 
     width: 100%;
   }
@@ -180,7 +185,9 @@
   .item__small-images-container a {
     margin-right: 14px;
 
-    &:nth-of-type(3) {
+    height: 129px;
+
+    &:nth-of-type(3n) {
       margin-right: 0;
     }
   }

@@ -44,6 +44,11 @@
   }
 }
 
+.new__gallery-item .product__image-container {
+  width: 100%;
+  height: 284px;
+}
+
 .new__gallery {
   margin-bottom: 35px;
 
@@ -139,6 +144,10 @@
     }
   }
 
+  .new__gallery-item .product__image-container {
+    height: 340px;
+  }
+
   .new__gallery-item img {
     width: 100%;
     height: 100%;
@@ -185,6 +194,8 @@
 
   .new__gallery-item .product__image-container {
     margin-bottom: 15px;
+
+    height: 135px;
   }
 
   .new__pagination-list {

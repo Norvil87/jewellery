@@ -15,7 +15,7 @@
 }
 
 .content__item {
-  margin-bottom: 95px;
+  margin-bottom: 90px;
 }
 
 .content__media {
@@ -46,7 +46,7 @@
   width: 100%;
 }
 
-.content__top-container h1 {
+.content__top-container h2 {
   font-family: "Cormorant Garamond", "Arial", serif;
   font-style: normal;
   font-weight: 700;
@@ -62,7 +62,7 @@
   padding: 0;
 }
 
-.content__top-container--catalog h1 {
+.content__top-container--catalog h2 {
   font-size: 34px;
   line-height: 44px;
   letter-spacing: 0;
@@ -153,7 +153,7 @@
     margin-bottom: 50px;
   }
 
-  .content__top-container h1,
+  .content__top-container h2,
   .content__top-container p {
     margin-right: 20px;
   }
@@ -162,7 +162,7 @@
     background-position: center;
   }
 
-  .content__top-container--catalog h1,
+  .content__top-container--catalog h2,
   .content__top-container--catalog p {
     margin-right: 0;
   }
@@ -220,14 +220,14 @@
     }
   }
 
-  .content__top-container h1 {
+  .content__top-container h2 {
     font-size: 38px;
     line-height: 49px;
 
     margin-right: 0;
   }
 
-  .content__top-container--catalog h1 {
+  .content__top-container--catalog h2 {
     font-size: 30px;
     line-height: 44px;
     letter-spacing: 0.07em;

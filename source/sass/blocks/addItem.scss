@@ -60,11 +60,11 @@
   background-repeat: no-repeat;
 }
 
-.login__button--close:hover {
+.addItem__button--close:hover {
   opacity: 0.6;
 }
 
-.login__button--close:active {
+.addItem__button--close:active {
   opacity: 0.3;
 }
 
@@ -242,6 +242,8 @@
     min-width: 100%;
 
     margin-bottom: 19px;
+
+    display: block;
   }
 
   .addItem__button-close {
@@ -314,7 +316,7 @@
     margin-bottom: 32px;
   }
 
-  .addItem__total p {
+  .addItem__total div {
     font-size: 12px;
     line-height: 16px;
 
