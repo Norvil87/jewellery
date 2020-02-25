@@ -78,6 +78,10 @@ p {
   padding: 0;
 }
 
+input[type="search"] {
+  appearance: none;
+}
+
 .button {
   background-color: $fancyBrown;
   border: 1px solid $fancyBrown;
